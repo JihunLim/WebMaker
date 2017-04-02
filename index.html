@@ -3,109 +3,117 @@
     <head>
         <title>심술 Company</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="app.css" rel="stylesheet"/>
+        <link href="content/app.css" rel="stylesheet"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
         <link rel="text/javascript" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"/>
+        <script src="https://code.jquery.com/jquery-1.10.2.js" type="application/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+        <script src="scripts/app.js" type="application/javascript"></script>
+        <script src="scripts/MainController.js" type="application/javascript"></script>
     </head>
-    <body>
-        <header class ="container-fluid">
-        <h1>심술Town, South Korea!</h1>
-        </header>
+    <body onload="onLoad()" ng-app="angularApp">
+        <div ng-controller="MainController">
+            <header class ="container-fluid">
+            <h1>심술Town, South Korea!</h1>
+            </header>
 
-        <nav class="container-fluid">
-            <ul class="nav navbar-inverse navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Amazing Places</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+            <nav class="container-fluid">
+                <ul class="nav navbar-inverse navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Amazing Places</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
 
-        <div class="container-fluid">
-            <div class="row">
-                
+            <div class="container-fluid">
+                <div class="row">
+                    
+                    <section class="col-sm-6 col-sm-push-3">
 
-                <section class="col-sm-6 col-sm-push-3">
-                    <div class="row">
-                        <article>
-                        <h2>Amazing Museum</h2>
-                        <div class="col-sm-3">
-                            <img src="http://lorempixel.com/200/100/city/1" />
+                        <input ng-model="smallnumber" type="number">
+                        <p {{theMessage}}}</p>
+                        <button ng-click="checkNumber()">Submit</button>
+                        
+                        <div class="row">
+                            <article>
+                            <h2>Amazing Museum</h2>
+                            <div class="col-sm-3">
+                                <img src="http://lorempixel.com/200/100/city/1" />
+                            </div>
+                            <div class="col-sm-9">
+                                <p>Started several mistake joy say painful removed reached end. </p>
+                                <p>State burst think end are its. Arrived off she elderly beloved him affixed noisier yet. </p>
+                                <p>An course regard to up he hardly. View four has said does men saw find dear shy. Talent men wicket add garden. </p>
+                            </div>
+                            </article>
+
+                            <article>
+                            <h2>SplashAnyone Waterpark</h2>
+                            <div class="col-sm-3">
+                                <img src="http://lorempixel.com/200/100/city/2" />
+                            </div>
+                            <div class="col-sm-9">
+                                <p>In on announcing if of comparison pianoforte projection. </p>
+                                <p>Maids hoped gay yet bed asked blind dried point. </p>
+                                <p>On abroad danger likely regret twenty edward do. </p>
+                                <p>Too horrible consider followed may differed age. An rest if more five mr of. Age just her rank met down way. </p>
+                                <p>Attended required so in cheerful an. Domestic replying she resolved him for did. Rather in lasted no within no. </p>
+                            </div>
+                            </article>
+
+                            <article>
+                            <h2>Best Home in 심술Town</h2>
+                            <div class="col-sm-3">
+                                <img src="http://lorempixel.com/200/100/city/3" />
+                            </div>
+                            <div class="col-sm-9">
+                                <p>Eat imagine you chiefly few end ferrars compass. Be visitor females am ferrars inquiry. </p>
+                                <p>Latter law remark two lively thrown. Spot set they know rest its. </p>
+                                <p>Raptures law diverted believed jennings consider children the see. Had invited beloved carried the colonel. </p>
+                                <p>Occasional principles discretion it as he unpleasing boisterous. She bed sing dear now son half. </p>
+                            </div>
+                            </article>
                         </div>
-                        <div class="col-sm-9">
-                            <p>Started several mistake joy say painful removed reached end. </p>
-                            <p>State burst think end are its. Arrived off she elderly beloved him affixed noisier yet. </p>
-                            <p>An course regard to up he hardly. View four has said does men saw find dear shy. Talent men wicket add garden. </p>
-                        </div>
-                        </article>
+                    </section>
 
-                        <article>
-                        <h2>SplashAnyone Waterpark</h2>
-                        <div class="col-sm-3">
-                            <img src="http://lorempixel.com/200/100/city/2" />
-                        </div>
-                        <div class="col-sm-9">
-                            <p>In on announcing if of comparison pianoforte projection. </p>
-                            <p>Maids hoped gay yet bed asked blind dried point. </p>
-                            <p>On abroad danger likely regret twenty edward do. </p>
-                            <p>Too horrible consider followed may differed age. An rest if more five mr of. Age just her rank met down way. </p>
-                            <p>Attended required so in cheerful an. Domestic replying she resolved him for did. Rather in lasted no within no. </p>
-                        </div>
-                        </article>
+                    <aside class="col-sm-3 col-sm-pull-6">
+                        <h2 class="title">Things to Do</h2>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Hiking">Hiking</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Biking">Biking</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Horseback">Horseback</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Backpacking">Backpacking</a></li>
+                        </ul>
+                    </aside>
 
-                        <article>
-                        <h2>Best Home in 심술Town</h2>
-                        <div class="col-sm-3">
-                            <img src="http://lorempixel.com/200/100/city/3" />
-                        </div>
-                        <div class="col-sm-9">
-                            <p>Eat imagine you chiefly few end ferrars compass. Be visitor females am ferrars inquiry. </p>
-                            <p>Latter law remark two lively thrown. Spot set they know rest its. </p>
-                            <p>Raptures law diverted believed jennings consider children the see. Had invited beloved carried the colonel. </p>
-                            <p>Occasional principles discretion it as he unpleasing boisterous. She bed sing dear now son half. </p>
-                        </div>
-                        </article>
-                    </div>
-                </section>
-
-                <aside class="col-sm-3 col-sm-pull-6">
-                    <h2 class="title">Things to Do</h2>
-                    <ul>
-                        <li><a href="https://en.wikipedia.org/wiki/Hiking">Hiking</a></li>
-                        <li><a href="https://en.wikipedia.org/wiki/Biking">Biking</a></li>
-                        <li><a href="https://en.wikipedia.org/wiki/Horseback">Horseback</a></li>
-                        <li><a href="https://en.wikipedia.org/wiki/Backpacking">Backpacking</a></li>
-                    </ul>
-                </aside>
-
-                <aside class="col-sm-3">
-                    <h2>How to Get There</h2>
-                    <ol id="orderedlist">
-                        <li>By Plane</li>
-                        <li>By Train</li>
-                        <li>By Automobile</li>
-                        <li>By Boat</li>
-                    </ol>
-                </aside>
-            </div>
-        </div>
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-6 col-sm-push-3"></div>
-                <div class="col-sm-6 col-sm-pull-3">
-                    <a name="contact">Contact Us</a>
-                    <p>Anytown Chamber of Commerce</p>
-                    <p>123 Main St.</p>
-                    <p>Anytown, OH 43212</p>
+                    <aside class="col-sm-3">
+                        <h2>How to Get There</h2>
+                        <ol id="orderedlist">
+                            <li>By Plane</li>
+                            <li>By Train</li>
+                            <li>By Automobile</li>
+                            <li>By Boat</li>
+                        </ol>
+                    </aside>
                 </div>
             </div>
-        </div>
 
-        <footer class="container-fluid">
-            Copyright 2017 CO. Simsul
-        </footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-push-3"></div>
+                    <div class="col-sm-6 col-sm-pull-3">
+                        <a name="contact">Contact Us</a>
+                        <p>Anytown Chamber of Commerce</p>
+                        <p>123 Main St.</p>
+                        <p>Anytown, OH 43212</p>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="container-fluid">
+                Copyright 2017 CO. Simsul
+                <p>{{timestamp }}</p>
+            </footer>
+        </div>
     </body>
-</html>>
-<html>
-    
+</html>
